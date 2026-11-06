@@ -10,7 +10,10 @@ elif (input2 == '-'):
 elif (input2 == '+'):
     print(input1 + input3)
 elif (input2 == '/'):
-    print(input1 + input3)
+    if input3 == 0:
+        print('Cannot divide by zero')
+    else:
+        print(input1 / input3)
 else:
     print('Please enter a valid operand (+,-,*,/)')
 
